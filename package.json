@@ -1,5 +1,5 @@
 {
-  "name": "test-publish-npm",
+  "name": "@wdesportes/test-publish-npm",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:wdesportes/test-publish-npm.git",
