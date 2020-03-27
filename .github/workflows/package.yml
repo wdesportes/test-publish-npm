@@ -15,7 +15,7 @@ jobs:
         run: |
           yarn config set //npm.pkg.github.com/:_authToken "${{ secrets.GPR_ACCESS_TOKEN }}"
           rm package.json
-          yarn add @wdesportes/test-publish-npm
+          yarn add @wdesportes/test-publish-npm --verbose
 
   using-npm:
     runs-on: ubuntu-latest
