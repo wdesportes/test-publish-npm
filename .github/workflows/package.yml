@@ -13,7 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Add package using yarn
         run: |
-          yarn config set //npm.pkg.github.com/:_authToken "${{ secrets.GPR_ACCESS_TOKEN }}"
+          yarn config set "//npm.pkg.github.com/:_authToken" "${{ secrets.GPR_ACCESS_TOKEN }}"
+          yarn config set "//npm.pkg.github.com/:_header:Authorization" "token ${{ secrets.GPR_ACCESS_TOKEN }}"
           rm package.json
           yarn add @wdesportes/test-publish-npm --verbose
 
