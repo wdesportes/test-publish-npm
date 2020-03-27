@@ -1,0 +1,25 @@
+name: Try to install package using npm or usin yarn
+
+on:
+  push:
+
+jobs:
+  using-yarn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Add package using yarn
+        run: |
+          yarn add @wdesportes/test-publish-npm
+
+  using-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Add package using npm
+        run: |
+          npm install @wdesportes/test-publish-npm
