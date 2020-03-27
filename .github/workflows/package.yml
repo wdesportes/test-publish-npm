@@ -14,7 +14,7 @@ jobs:
       - name: Add package using yarn
         run: |
           echo '"//npm.pkg.github.com/:_authToken" "${{ secrets.GPR_ACCESS_TOKEN }}"' >> .yarnrc
-          echo '"//npm.pkg.github.com/:_header:Authorization" "token ${{ secrets.GPR_ACCESS_TOKEN }}"' >> .yarnrc
+          echo '"//npm.pkg.github.com/:_header:Authorization" "token ${{ secrets.GPR_ACCESS_TOKEN }}"'
           rm package.json
           yarn add wdesportes/test-publish-npm --verbose
           yarn install
