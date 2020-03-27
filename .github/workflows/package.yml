@@ -10,6 +10,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - uses: actions/checkout@v2
       - name: Add package using yarn
         run: |
           yarn add @wdesportes/test-publish-npm
@@ -20,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - uses: actions/checkout@v2
       - name: Add package using npm
         run: |
           npm install @wdesportes/test-publish-npm
