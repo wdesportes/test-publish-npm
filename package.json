@@ -1,0 +1,8 @@
+{
+  "name": "test-publish-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wdesportes/test-publish-npm.git",
+  "author": "William Desportes <williamdes@wdes.fr>",
+  "license": "MPL-2.0"
+}
