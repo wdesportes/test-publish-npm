@@ -12,6 +12,8 @@ jobs:
           node-version: 12
       - uses: actions/checkout@v2
       - name: Add package using yarn
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GPR_ACCESS_TOKEN }}
         run: |
           yarn add @wdesportes/test-publish-npm
 
@@ -23,5 +25,7 @@ jobs:
           node-version: 12
       - uses: actions/checkout@v2
       - name: Add package using npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GPR_ACCESS_TOKEN }}
         run: |
           npm install @wdesportes/test-publish-npm
