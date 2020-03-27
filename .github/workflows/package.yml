@@ -16,7 +16,7 @@ jobs:
           echo '"//npm.pkg.github.com/:_authToken" "${{ secrets.GPR_ACCESS_TOKEN }}"' >> .yarnrc
           echo '"//npm.pkg.github.com/:_header:Authorization" "token ${{ secrets.GPR_ACCESS_TOKEN }}"' >> .yarnrc
           rm package.json
-          yarn add @wdesportes/test-publish-npm --verbose
+          yarn add @wdesportes/test-publish-npm --verbose || yarn install
 
   using-npm:
     runs-on: ubuntu-latest

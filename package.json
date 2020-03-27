@@ -1,9 +1,14 @@
 {
-  "name": "@wdesportes/test-publish-npm",
+  "name": "@wdesportes/test-publish-npm-example",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:wdesportes/test-publish-npm.git",
   "author": "William Desportes <williamdes@wdes.fr>",
   "license": "MPL-2.0",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@wdesportes/test-publish-npm": "^1.0.0"
+  }
 }
